@@ -9,7 +9,7 @@ var game = {
             question: "What is the first Pokemon in the Pokedex",
             answer1: "Charmander",
             answer2: "Squritle",
-            answer3: "Bublasaur",
+            answer3: "Bulbasaur",
             answer4: "Pikachu",
             correctAnswer: "Bulbasaur"
         },
@@ -75,8 +75,6 @@ $("#start-button").on("click", function () {
 $("body").on("click", ".answer" ,function () {
     game.playerChoice = $(this).attr("choice");
     var correctAnswer = game.trivia[game.questionNum].correctAnswer;
-    console.log("selected: "+game.playerChoice);
-    console.log("correct: "+game.trivia[game.questionNum].correctAnswer);
     if(game.playerChoice === correctAnswer){
         game.playerCorrect ++;
     } else {
