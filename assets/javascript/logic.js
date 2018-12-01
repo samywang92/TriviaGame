@@ -111,6 +111,7 @@ $(document).ready(function () {//  Variable that will hold our setInterval that 
                         $(".correct-data").append(correctData, incorrectData);
                         $(".trivia-container").toggle();
                         $("#start-button").toggle();
+                        game.questionNum = 0;
                         console.log("its ovah");
                     }
 
